@@ -12,6 +12,7 @@
   --shadow-500: 0 5px 5px rgba(0, 0, 0, 0.5);
   --transition-300: all 0.3s ease-in-out;
   --transition-500: all 0.5s ease-in-out;
+  --serction-padding: 8rem;
 }
 html {
   scroll-behavior: smooth;
@@ -245,3 +246,81 @@ video {
   }
 }
 // End Landing
+
+// Start about
+.about {
+  & {
+    padding: var(--serction-padding) 0px;
+  }
+  .container {
+    & {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+    }
+    .content {
+      & {
+        flex: 1;
+        order: -1;
+      }
+      h3 {
+        & {
+          color: var(--primary);
+          font-size: 4rem;
+          font-weight: 700;
+          margin: 0;
+          line-height: 6rem;
+        }
+        span {
+          color: #ffd700;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+        font-weight: 300;
+        text-align: justify;
+      }
+      button {
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .slider-two {
+      & {
+        flex: 1;
+        position: relative;
+      }
+      .navigation-2 {
+        & {
+          position: absolute;
+          right: 0.5rem;
+          bottom: 0.2rem;
+          z-index: 200;
+          @include flex(flex-start, center, 0, 0);
+        }
+        div {
+          width: 4rem;
+          height: 4rem;
+          background-color: var(--white);
+          color: var(--primary);
+          @include flex(center, center, 0, 0);
+          cursor: pointer;
+        }
+        div.swiper-button-disabled {
+          opacity: 0.6;
+          cursor: default;
+        }
+      }
+      img {
+        width: 100%;
+        height: 60rem;
+      }
+    }
+  }
+}
+// End about
