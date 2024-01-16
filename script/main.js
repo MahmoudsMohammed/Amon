@@ -23,3 +23,11 @@ const slider1 = new Swiper('.slider-one', {
     prevEl: '.swiper-one-prev',
   },
 });
+
+const slider2 = new Swiper('.slider-one', {
+  autoHeight: true,
+  navigation: {
+    nextEl: '.swiper-two-next',
+    prevEl: '.swiper-two-prev',
+  },
+});
