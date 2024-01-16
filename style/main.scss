@@ -223,5 +223,25 @@ video {
       }
     }
   }
+  .navigation {
+    & {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 200;
+      @include flex(flex-start, center, 0, 2rem);
+    }
+    div {
+      color: var(--white);
+      padding: 1rem;
+      border-radius: 50%;
+      border: 1px solid var(--white);
+      cursor: pointer;
+      @media (max-width: 767px) {
+        padding: 0.75rem;
+      }
+    }
+  }
 }
 // End Landing
