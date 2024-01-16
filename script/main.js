@@ -24,7 +24,7 @@ const slider1 = new Swiper('.slider-one', {
   },
 });
 
-const slider2 = new Swiper('.slider-one', {
+const slider2 = new Swiper('.slider-two', {
   autoHeight: true,
   navigation: {
     nextEl: '.swiper-two-next',
