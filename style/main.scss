@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --primary: #212529;
+  --primary: black;
   --text-1: #a9a9a9;
   --white: #fff;
   --shadow-300: 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -179,12 +179,28 @@ video {
       transform: translate(-50%, -50%);
       text-align: center;
       z-index: 150;
+      width: 70%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
     }
     p {
       font-size: 7rem;
       font-weight: 700;
       text-transform: capitalize;
       color: var(--white);
+      line-height: 9rem;
+      margin: 0 {
+        bottom: 2rem;
+      }
+      @media (max-width: 991px) {
+        font-size: 4.5rem;
+        line-height: 7rem;
+      }
+      @media (max-width: 767px) {
+        font-size: 3rem;
+        line-height: 5rem;
+      }
     }
     button {
       & {
@@ -196,7 +212,10 @@ video {
         font-weight: 400;
         border: none;
         border-radius: 0.5rem;
-        background-color: black;
+        background-color: var(--primary);
+        @media (max-width: 991px) {
+          padding: 1.5rem 2rem;
+        }
       }
       &:hover {
         transform: translateY(-2px);

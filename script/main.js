@@ -2,8 +2,12 @@ const icon = document.querySelector('.icon'),
   links = document.querySelector('.links');
 
 // toggle the open class on the links
-icon.addEventListener('click', () => {
-  links.classList.toggle('open');
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('icon')) {
+    links.classList.toggle('open');
+  } else {
+    links.classList.remove('open');
+  }
 });
 
 // Handle The Sliders
