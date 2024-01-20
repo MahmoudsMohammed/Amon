@@ -652,6 +652,10 @@ button {
       display: flex;
       align-items: flex-start;
       gap: 4rem;
+      @media (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
     .content {
       & {
@@ -691,8 +695,7 @@ button {
             flex: 1;
           }
           img {
-            width: 30rem;
-            height: 30rem;
+            height: 25rem;
             margin-bottom: 2rem;
           }
           span {
@@ -713,7 +716,7 @@ button {
         flex: 1;
       }
       img {
-        height: 75rem;
+        height: 70rem;
       }
     }
   }
