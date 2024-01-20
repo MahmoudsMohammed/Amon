@@ -47,6 +47,21 @@ video {
   width: 100%;
   height: 100%;
 }
+button {
+  & {
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 500;
+    background: var(--primary);
+    color: var(--white);
+    transition: var(--transition-300);
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-300);
+  }
+}
 
 // End Main Rules
 
@@ -520,3 +535,100 @@ video {
 }
 
 // End Discount
+
+// Start trip
+.trip {
+  .content {
+    & {
+      width: fit-content;
+      margin: var(--serction-padding) auto;
+      text-align: center;
+    }
+    h3 {
+      color: var(--primary);
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 0;
+      line-height: 6rem;
+      @media (max-width: 500px) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+    p {
+      width: 60%;
+      margin: 2rem auto 0;
+      font-size: 1.6rem;
+      line-height: 1.7;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+  button {
+    display: block;
+    width: fit-content;
+    margin: 4rem auto var(--serction-padding);
+    padding: 1.5rem 3rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+  }
+  .container {
+    & {
+      position: relative;
+      margin-bottom: 10rem;
+    }
+    .swiper-three-prev,
+    .swiper-three-next {
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .swiper-three-prev {
+      left: -5rem;
+    }
+    .swiper-three-next {
+      right: -5rem;
+    }
+    .custom-pagination {
+      position: absolute;
+      bottom: -6rem;
+      display: flex;
+      justify-content: center;
+    }
+    .swiper-pagination-bullet {
+      width: 3rem;
+      height: 1rem;
+      border-radius: 1rem;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: var(--primary);
+    }
+    .slider-three {
+      & {
+        position: relative;
+      }
+      .swiper-slide {
+        & {
+          height: 70rem;
+          width: 40rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+// end trip
