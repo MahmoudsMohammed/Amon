@@ -562,6 +562,9 @@ button {
       line-height: 1.7;
       font-weight: 300;
       text-align: center;
+      @media (max-width: 767px) {
+        width: 90%;
+      }
     }
   }
   button {
@@ -593,6 +596,9 @@ button {
       top: 50%;
       transform: translateY(-50%);
       cursor: pointer;
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
     .swiper-three-prev {
       left: -5rem;
@@ -622,6 +628,9 @@ button {
         & {
           height: 70rem;
           width: 40rem;
+          @media (max-width: 600px) {
+            height: 50rem;
+          }
         }
         img {
           width: 100%;
