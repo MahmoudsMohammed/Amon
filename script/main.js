@@ -44,3 +44,27 @@ const slider2 = new Swiper('.slider-two', {
     prevEl: '.swiper-two-prev',
   },
 });
+
+var mySwiper = new Swiper('.slider-three', {
+  autoHeight: true,
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 40,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-three-next',
+    prevEl: '.swiper-three-prev',
+  },
+  pagination: {
+    el: '.custom-pagination',
+  },
+});
