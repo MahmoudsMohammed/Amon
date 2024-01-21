@@ -671,6 +671,9 @@ button {
           font-size: 3rem;
           line-height: 4rem;
         }
+        @media (max-width: 991px) {
+          text-align: center;
+        }
       }
       p {
         margin: 2rem auto 4rem;
@@ -678,6 +681,9 @@ button {
         line-height: 1.7;
         font-weight: 300;
         text-align: justify;
+        @media (max-width: 991px) {
+          text-align: center;
+        }
       }
       button {
         padding: 1.5rem 3rem;
@@ -740,7 +746,7 @@ button {
       gap: 4rem;
       @media (max-width: 991px) {
         flex-direction: column;
-        padding: 3rem 2rem;
+        padding: 4rem 2rem;
       }
     }
     .content {
