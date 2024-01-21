@@ -846,3 +846,47 @@ button {
   }
 }
 // End Contact
+
+// Start footer
+footer {
+  & {
+    background-color: var(--primary);
+    padding: var(--serction-padding) 0;
+  }
+  .container {
+    & {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem 4rem;
+    }
+    .box:not(:last-of-type) {
+      
+      p {
+        color: var(--white);
+        font-size: 2.5rem;
+        margin: 0 {
+          bottom: 2rem;
+        }
+        font-weight: 600;
+      }
+      ul {
+        li {
+          color: var(--white);
+          padding: 1rem 0;
+          font-weight: 300;
+        }
+      }
+    }
+    .box:last-of-type {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      img {
+        height: 15rem;
+      }
+    }
+  }
+}
+// End footer
