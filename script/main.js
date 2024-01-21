@@ -7,7 +7,7 @@ const icon = document.querySelector('.icon'),
   main = document.getElementById('main');
 
 // display the loader
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   main.style.display = 'none';
   setTimeout(() => {
     loader.style.display = 'none';
@@ -96,7 +96,7 @@ window.addEventListener('load', () => {
     scroll.reveal(`.trip .content , .more .content , .news .content`, {
       origin: 'left',
     });
-  }, 3000);
+  }, 4000);
 });
 
 // toggle the open class on the links
