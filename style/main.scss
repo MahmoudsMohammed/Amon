@@ -917,23 +917,6 @@ footer {
   img {
     width: 40rem;
     height: 40rem;
-    opacity: 0;
-    visibility: hidden;
-    animation: loaderDisplay 3800ms ease-in-out;
-  }
-  @keyframes loaderDisplay {
-    0% {
-      opacity: 0;
-      visibility: hidden;
-    }
-    98% {
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
   }
 }
 // End Loader
