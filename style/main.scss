@@ -800,3 +800,49 @@ button {
   }
 }
 // end news
+
+// Start Contact
+.contact {
+  .content {
+    & {
+      margin: var(--serction-padding) auto 4rem;
+    }
+    h3 {
+      width: fit-content;
+      color: var(--primary);
+      font-size: 5rem;
+      font-weight: 700;
+      margin: 0 auto 2rem;
+      line-height: 5rem;
+      @media (max-width: 500px) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+    p {
+      width: 60%;
+      text-align: center;
+      color: var(--primary);
+      margin: 0 auto;
+      font-size: 1.6rem;
+      line-height: 1.7;
+      font-weight: 300;
+      @media (max-width: 767px) {
+        width: 90%;
+      }
+    }
+  }
+  .container {
+    & {
+      margin-bottom: var(--serction-padding);
+    }
+    iframe {
+      width: 100%;
+      height: 70rem;
+      @media (max-width: 600px) {
+        height: 50rem;
+      }
+    }
+  }
+}
+// End Contact
