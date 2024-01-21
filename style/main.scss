@@ -93,7 +93,21 @@ button {
       width: 100%;
       top: 0;
       left: 0;
-      z-index: 200;
+      z-index: 300;
+    }
+    &.fix {
+      position: fixed;
+      display: block;
+      background-color: var(--primary);
+    }
+    &.fix .container {
+      button {
+        & {
+          border: 1px solid var(--primary);
+          background: var(--white);
+          color: var(--primary);
+        }
+      }
     }
     .container {
       & {
@@ -860,7 +874,6 @@ footer {
       gap: 2rem 4rem;
     }
     .box:not(:last-of-type) {
-      
       p {
         color: var(--white);
         font-size: 2.5rem;

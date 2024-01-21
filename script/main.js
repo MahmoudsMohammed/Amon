@@ -1,7 +1,8 @@
 const icon = document.querySelector('.icon'),
   links = document.querySelector('.links'),
   control = document.querySelector('.control'),
-  video = document.querySelector('.discount-video');
+  video = document.querySelector('.discount-video'),
+  nav = document.querySelector('nav');
 
 // toggle the open class on the links
 document.addEventListener('click', (e) => {
@@ -20,6 +21,15 @@ control.addEventListener('click', (e) => {
   } else {
     video.pause();
     control.innerHTML = '<i class="fa-solid fa-play"></i>';
+  }
+});
+
+// make nav fixed when scroll
+document.addEventListener('scroll', () => {
+  if (window.scrollY > nav.getBoundingClientRect().height) {
+    nav.classList.add('fix');
+  } else {
+    nav.classList.remove('fix');
   }
 });
 
