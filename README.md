@@ -6,7 +6,6 @@ Website for an Egyptian Travel Agency.
 
 - [Overview](#overview)
   - [Amon features](#Amon-features)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
